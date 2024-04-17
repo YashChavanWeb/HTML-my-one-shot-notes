@@ -1,0 +1,260 @@
+<!DOCTYPE html> <!--Tells browser you are using HTML5-->
+<html lang="en"> <!-- root of html document  -->
+
+<head> <!-- Container for meta date (does not display on web page, just code should know) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title> <!-- Page title  -->
+</head>
+
+<body> <!-- Contains all data rendered by the browser  -->
+    <h1>Hello World !</h1>
+    <!-- Most of the tags have an opening and closing tag, some can have only the opening  -->
+    <H1>Hello World !!</h1> <!-- HTML is "not" case sensitive language  -->
+
+    <!-- HTML Attributes : Used to add more information to the tag. Eg:  <html lang="en">  -->
+
+
+
+
+
+    <!-- Tags in HTML  -->
+    <h1>Heading Tag </h1>
+    <!-- h1,h2,h3....h6 -> h1 does not define more size, it defines more importance -->
+    <h2>If you want to increase/decrease size then define font size dont use header tag</h2> <!-- Important for SEO -->
+
+    <p>Paragraph Tag</p>
+
+    <a href="linkofwebsite">This is anchor tag</a> <!-- Used to add links to your page  -->
+    <a href="/Hellofolder/hello.html">Print Hello </a>
+    <!-- You can also link your own website to this ongoing website  -->
+    <!-- Other Website -> Absolute link   ,   Our Website from folder -> Relative Link  -->
+
+    <img src="/img.png" alt="Random Image" height="100"> <!-- If img does not load then alt text appears  -->
+    <!-- Image can also be relative or absolute  -->
+    <!-- image has height and width attribute, at a time we change only one to keep aspect ratio proper  -->
+
+    <br>This is br tag <!-- Used to add enter and go to the next line, does not have end tag -->
+
+    <b>Bold Tag</b> <i>Italic Tag</i> <u>Underline Tag</u> <!--Used to highlight the text -->
+    <p><b>This is</b> a very small Paragraph</p> <!-- using these tags in-between other tags  -->
+
+    <big>Big and </big> <small>Small Tags</small>
+
+    <hr>This is a horizontal ruler tag <!--This tag is used to seperate content -->
+
+    <sub>This is a subscript Tag used to make small Eg: H20 </sub>
+    <p>H<sub>2</sub>0 </p> <!--Using Subscript -->
+
+    <sup>This is superscript Tag used to make raised to Eg: A raised to n</sup>
+    <p>A<sup>n</sup> = 2</p> <!--Using Superscript -->
+    <!--1 hr done -->
+
+    <pre>It is used to display         text as it 
+        is without ignoring spaces and next line</pre>
+
+
+
+
+
+    <!-- Page layout Techniques in HTML  -->
+
+    <!--  Using Semantic tags -->
+    <header>
+        <h1>Education</h1>
+        <h1>Projects</h1>
+    </header>
+
+    <footer>
+        <h3>contact us</h3>
+        <h3>Help</h3>
+    </footer>
+
+
+    <main>
+        There are 3 main tags inside main Tag
+
+        <!-- Section Tag  -->
+        <h1>My Portfolio</h1>
+        <section> <!-- This section is for college info  -->
+            College : VCET
+            Pointer : 9.17
+        </section>
+
+        <section> <!-- This section is for what knowledege I have  -->
+            Languages : C, HTML, CSS
+        </section>
+
+        <!-- Article Tag  -->
+        <article>
+            My story is that Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, illo!
+        </article>
+
+        <!-- Aside Tag  -->
+        <aside>
+            For content aside main content.
+            adds
+            or extra posts
+        </aside>
+    </main>
+
+    <!--  Revisiting Anchor Tag -->
+    <a href="google.com" target="_main">The linked page will open in new tab</a>
+
+    <a href="google.com"> <img src="link" alt="image"> The image will become clickable and it will open the link</a>
+
+    <!--  Revisiting Image Tag -->
+    <img src="link" alt="image" height="100">
+    <img src="link" alt="image" width="100"> <!-- Change only one thing height or width, dont change both -->
+
+    <!--  div Tag -->
+    <div>div is the container used for other HTML Elements</div>
+    <div>Block elements take full Width</div> <!--  Get List of block elements if needed-->
+
+    <!--  span tag-->
+    <span>span is the container for other HTML Elements</span>
+    <span>Inline elements take width as per size</span> <!--  Get List of inline elements if needed-->
+
+
+
+
+    <!-- List in HTML -->
+
+    <!-- 1. Unordered list -->
+    <ul> <!--  this means un ordered -->
+        <li>Apple</li>
+        <ul> <!-- This is a Sub list -->
+            <li>Spring Season</li>
+            <li>Winter season</li>
+        </ul>
+        <li>Mango</li>
+    </ul>
+
+    <!-- 1. Ordered list -->
+    <ol> <!-- This means ordered -->
+        <li>Apple</li>
+        <li>Mango</li>
+    </ol>
+
+
+
+    <!-- Tables in HTML -->
+
+    <tr>Used to display table row</tr>
+    <td>used to display table data</td>
+    <th>used to display table header</th>
+
+    <!-- We go on forming tables row-wise -->
+    <table border="solid"> <!-- write all the table content inside this tag only -->
+        <caption>Student Data</caption> <!-- Defines about the table -->
+        <thead> <!-- used for formatting of table header -->
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+            </tr>
+            <tr>
+                <th colspan="2"> <!--define the no of columns this text will occupy -->
+                    Information
+                </th>
+            </tr>
+        </thead>
+        <tbody> <!-- used for formatting of table body -->
+            <tr>
+                <td>Yash</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td rowspan="2"> <!--define the no of rows this text will occupy -->
+                    2 rows
+                </td>
+                <td>
+                    2100
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bhau kadam
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <!-- Forms in HTML -->
+
+    <form action="">
+        Forms are used to collect data from the user
+    </form>
+
+    <form action="/action.php">Action attribute is used to define what action needs to be performed when a form is
+        submitted</form> <br><br>
+
+    <!-- Form Elements -->
+    <form action="/action.php">
+
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+        <br><br>
+
+        <label for="101"> <!-- with label, even if you click on option it will get selected (Clicakble option) -->
+            <input type="radio" value="class 11" name="class" id="101"> Class 11
+        </label>
+        <label for="102">
+            <input type="radio" value="class 12" name="class" id="102"> Class 12
+        </label>
+        <!-- with radio buttons we can select only one option -->
+        <!-- its class should be same -->
+        <!-- the value and the option should be same/in sync because in backend value goes not the selected option -->
+        <br><br>
+
+        <!-- Class and Id in HTML -->
+        <div class="container" id="1">Student 1</div>
+        <div class="container" id="2">Student 2</div>
+        <br><br>
+
+        <!--Checkbox -->
+        <label for="math">
+            <input type="checkbox" value="Maths" name="Subject" id="101">Maths
+        </label>
+        <label for="chem">
+            <input type="checkbox" value="Chemistry" name="Subject" id="102">Chemistry
+        </label>
+        <label for="phy">
+            <input type="checkbox" value="Physics" name="Subject" id="103">Physics
+        </label>
+        <br><br>
+
+        <select name="city" id="city">
+            <option value="Delhi">Delhi</option>
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+        </select>
+        <br><br>
+
+        <textarea name="feedback" id="101" cols="30" rows="10" placeholder="Enter your Feedback"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- this is used for adding a website to your own website  -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    <video src="myVideo.mp4" controls loops>
+        My video
+        Controls
+        height
+        Width
+        loop
+        autoplay
+    </video>
+
+</body>
+
+</html>
